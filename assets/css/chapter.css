@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --white: #fff;
+  --blue: #007c89;
+  --green: #008000;
+  --slow-red: #ff7979;
+}
+
+.top {
+  text-align: center;
+}
+
+.top a {
+  text-decoration: none;
+}
+
+.top a:hover {
+  text-decoration: underline;
+}
+
+.name {
+  text-align: center;
+  font-family: "The Nautigal", cursive;
+  font-size: 40px;
+}
+
+.name h3 {
+  font-size: 35px;
+  text-shadow: 2px 2px 4px var(--slow-red);
+  font-weight: bold;
+}
+
+.chapter1 {
+  text-align: center;
+}
+
+.chapter1 p {
+  width: 216px;
+  font-size: 11px;
+  margin: 0 auto;
+}
+
+.abc {
+  display: flex;
+}
+
+.story > p {
+  margin-top: 10px;
+  text-indent: 10%;
+}
+
+.story > p::first-letter {
+  font-size: 200%;
+  color: var(--slow-red);
+  font-family: "Courier New", Courier, monospace;
+}
+
+.btn {
+  justify-content: center;
+  gap: 5%;
+  margin: 2% 0 1% 0;
+}
+
+.btn a {
+  text-decoration: none;
+}
+
+.next-btn {
+  padding: 8px 50px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid var(--green);
+  transition: 0.3s linear;
+}
+
+.next-btn:hover {
+  background-color: var(--blue);
+  color: var(--white);
+  border: 1px solid var(--blue);
+  cursor: pointer;
+}
+
+.end {
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  /*Big smartphones [426px -> 600px]*/
+  .btn {
+    margin: 5% 3% 3% 3%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn a {
+    margin-top: 5%;
+  }
+}

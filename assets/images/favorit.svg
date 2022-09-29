@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="favorit" transform="translate(7753 -4755)">
+    <g id="Ellipse_505" data-name="Ellipse 505" transform="translate(-7753 4755)" fill="none" stroke="#bdbdbd" stroke-width="1">
+      <circle cx="8" cy="8" r="8" stroke="none"/>
+      <circle cx="8" cy="8" r="7.5" fill="none"/>
+    </g>
+    <g id="_001-love" data-name="001-love" transform="translate(-7749 4760)">
+      <path id="Path_108952" data-name="Path 108952" d="M5.65,31a2.035,2.035,0,0,0-1.8,1.237A2.035,2.035,0,0,0,2.044,31,2.117,2.117,0,0,0,0,33.238c0,1.626,1.526,2.647,3.7,4.578a.223.223,0,0,0,.3,0c2.17-1.93,3.7-2.952,3.7-4.578A2.117,2.117,0,0,0,5.65,31Zm-1.8,6.34c-2-1.766-3.4-2.747-3.4-4.1a1.657,1.657,0,0,1,1.593-1.78,1.816,1.816,0,0,1,1.586,1.436.225.225,0,0,0,.435,0A1.813,1.813,0,0,1,5.65,31.458a1.657,1.657,0,0,1,1.593,1.78C7.243,34.593,5.845,35.576,3.847,37.34Z" transform="translate(0 -31)" fill="#bdbdbd" stroke="#bdbdbd" stroke-width="0.2"/>
+    </g>
+  </g>
+</svg>

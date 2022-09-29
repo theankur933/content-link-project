@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect with Us!!!</title>
+
+    <!-- Link connect file -->
+    <link rel="stylesheet" href="assets/css/contact.css" />
+
+    <!-- Favicon image -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akshar:wght@400;600&family=BIZ+UDGothic&family=Dancing+Script:wght@500&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- EmailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init("cc9ctq7lln4lL1z3O");
+      })();
+    </script>
+  </head>
+
+  <body>
+    <section class="main">
+      <div class="contact-me abc">
+        <img
+          class="contact-me-image"
+          src="assets/images/contactPhone.jfif"
+          alt=""
+        />
+        <h3>Connect with us!!!</h3>
+      </div>
+      <!-- Close contact-me -->
+      <section class="form-container">
+        <form>
+          <div class="elem">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              name="fn"
+              id="fname"
+              maxlength="30"
+              placeholder="First Name"
+            />
+            <span class="error"></span>
+          </div>
+          <!-- Close elem -->
+          <div class="elem">
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              name="ln"
+              id="lname"
+              maxlength="30"
+              placeholder="Last Name"
+            />
+            <span class="error"></span>
+          </div>
+          <!-- Close elem -->
+          <div class="elem">
+            <label for="num">Contact Number</label>
+            <input
+              type="tel"
+              maxlength="10"
+              name="numb"
+              placeholder="Enter Number"
+              id="number"
+            />
+            <span class="error"></span>
+          </div>
+          <!-- Close elem -->
+          <div class="elem">
+            <label for="mail">Email</label>
+            <input
+              type="email"
+              maxlength="40"
+              name="mail"
+              placeholder="abc.123@gmailmail.com"
+              id="mail"
+            />
+            <span class="error"></span>
+          </div>
+          <!-- Close elem -->
+          <div class="elem sub">
+            <button class="sub-btn" type="submit">Submit</button>
+          </div>
+          <!-- Close elem sub -->
+        </form>
+        <!-- Close form -->
+      </section>
+      <!-- Close form-container -->
+    </section>
+    <!-- Close main section -->
+    <script src="assets/js/contact.js"></script>
+  </body>
+</html>

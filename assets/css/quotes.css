@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+}
+
+:root {
+  --white: #fff;
+  --slow-white: #ffe4c4;
+  --green: #008000;
+  --blue: #007c89;
+}
+
+.top {
+  text-align: center;
+}
+
+.top a {
+  text-decoration: none;
+}
+
+.top a:hover {
+  text-decoration: underline;
+}
+
+.listOfBooks {
+  text-align: center;
+}
+
+.listOfBooks p {
+  font-size: 20px;
+  text-shadow: 2px 2px 4px var(--white);
+  border-bottom: 1px solid var(--slow-white);
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+.listOfBooks p i {
+  color: var(--green);
+  margin-left: 5px;
+}
+
+.listOfBooks button {
+  padding: 8px 50px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid var(--green);
+  transition: 0.3s linear;
+  margin-top: 1%;
+  position: sticky;
+  top: 0;
+}
+
+.listOfBooks button:hover {
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  border: 1px solid var(--blue);
+}
+
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  .top {
+    display: none;
+  }
+}

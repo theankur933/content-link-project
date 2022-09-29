@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --grey: #808080;
+  --green: #008000;
+  --blue: #0f4a8a;
+  --white: #ebf7ff;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+}
+
+.top a {
+  color: var(--white);
+  font-weight: bold;
+}
+
+.top a:hover {
+  text-decoration: underline;
+}
+
+.listOfBooks {
+  text-align: center;
+}
+
+.listOfBooks a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.listOfBooks span {
+  font-size: 25px;
+  line-height: 2;
+}
+
+.listOfBooks span:hover {
+  text-decoration: underline;
+}
+
+.listOfBooks span:active {
+  color: var(--green);
+}
+
+.listOfBooks a:visited {
+  color: var(--blue);
+}
+
+.pics input {
+  padding: 10px 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-top: 1%;
+}
+
+.pics input::placeholder {
+  color: var(--grey);
+}
+
+.pics input[type="text"] {
+  color: var(--green);
+  padding-left: 40px;
+}
+
+.pics .fa {
+  position: relative;
+  left: 30px;
+  color: var(--grey);
+}
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  .top {
+    display: none;
+  }
+}

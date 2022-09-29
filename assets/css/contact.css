@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+      -315deg,
+      rgb(37 90 209 / 60%),
+      rgba(104, 134, 104, 0.623)
+    ),
+    url(https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+:root {
+  --grey: #ccc;
+  --white: #fff;
+  --purple: #800080;
+  --peachu: #ffdab9;
+}
+
+.abc {
+  display: flex;
+}
+
+.contact-me {
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.contact-me-image {
+  height: 50px;
+  width: 175px;
+  border-radius: 50%;
+}
+
+h3 {
+  color: #fff;
+  margin-left: 10px;
+}
+
+.form-container {
+  min-width: 300px;
+  padding: 3% 5%;
+  border-radius: 4px;
+  backdrop-filter: blur(1px);
+  background-color: rgba(255, 255, 255, 0.26);
+  box-shadow: inset 3px 3px 5px rgba(255, 255, 255, 0.555),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.226), 3px 3px 10px rgba(0, 0, 0, 0.479);
+}
+
+.elem {
+  width: 100%;
+  margin: 25px 0;
+}
+
+.elem label {
+  display: block;
+}
+
+.elem input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--white);
+  border-bottom: 1px solid var(--grey);
+  padding: 5px 10px;
+  transition: 0.2s ease-in-out all;
+}
+
+.elem input::placeholder {
+  color: var(--peachu);
+}
+
+.sub {
+  text-align: center;
+}
+
+.sub-btn {
+  border: 1px solid var(--white);
+  outline: none;
+  background-color: var(--white);
+  padding: 8px 18px;
+  font-weight: 500;
+  border-radius: 30px;
+  transition: 0.2s ease-in-out all;
+  margin: 0 auto;
+}
+
+.sub-btn:hover {
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid var(--purple);
+}
+
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+}

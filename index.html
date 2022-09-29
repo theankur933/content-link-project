@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This website has a lot of information to grow and you can keep yourself updated by reading this."
+    />
+    <title>contentLink - Home</title>
+
+    <!-- Link css file -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Favicon image -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akshar:wght@400;600&family=BIZ+UDGothic&family=Dancing+Script:wght@500&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Subscribe Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akshar:wght@400;600&family=BIZ+UDGothic&family=Dancing+Script:wght@500&family=Poppins&family=The+Nautigal&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- EmailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init("cc9ctq7lln4lL1z3O");
+      })();
+    </script>
+
+    <!-- Tailwind CSS -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  </head>
+  <body onload="showTime()">
+    <!-- MainPage Starts Here -->
+    <main>
+      <!-- Start header -->
+      <header class="abc">
+        <!-- Start nav -->
+        <nav id="show">
+          <!-- Start hamburger -->
+          <ul class="abc humburger">
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="bookList.html">Books</a></li>
+            <li><a href="typesOf.html">Inspiration Quotes</a></li>
+            <li>
+              <a
+                href="https://www.forbes.com/real-time-billionaires/#678f4a9b3d78"
+                target="_blank"
+                >Forbes</a
+              >
+            </li>
+            <span
+              ><i class="fa fa-close" id="close" onclick="Close()"></i
+            ></span>
+          </ul>
+          <!-- Close hamburger -->
+        </nav>
+        <!-- Close nav -->
+
+        <!-- Option -->
+        <span><i class="fa fa-bars" onclick="Show()" id="hum"></i></span>
+        <!--Start LOGO -->
+        <div id="logo">
+          <img class="Logo" src="assets/images/image_2.png" alt="LOGO" />
+        </div>
+        <!-- End LOGO -->
+
+        <!-- Start Button -->
+        <div id="btn">
+          <a href="sign-up.html"
+            ><button class="Sign-Up">Sign Up Free</button></a
+          >
+        </div>
+        <!-- Close Button -->
+
+        <!-- Clock and Day -->
+        <div class="mainn abc">
+          <!-- Start clock -->
+          <div class="clock" id="clock">
+            <p></p>
+          </div>
+          <!-- End clock -->
+
+          <div class="day_date abc">
+            <!-- Day -->
+            <div class="day" id="day">
+              <p></p>
+            </div>
+            <!-- Close day -->
+
+            <!-- date -->
+            <div class="date" id="date">
+              <p></p>
+            </div>
+          </div>
+          <!-- Close date and day_date -->
+        </div>
+        <!-- Close mainn -->
+      </header>
+      <!-- header Ends Here -->
+      <!-- Banner Slider Starts Here -->
+      <section class="banner">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img title="Pic-1" src="assets/images/Banner_1.jpg" />
+            <p class="text">
+              “A reader lives a thousand lives before he dies . . . The man who
+              never reads lives only one.” - George R.R. Martin
+            </p>
+          </div>
+
+          <div class="mySlides fade">
+            <img title="Pic-2" src="assets/images/Banner_2.jpg" />
+            <p class="text">
+              “Until I feared I would lose it, I never loved to read. One does
+              not love breathing.” - Harper Lee
+            </p>
+          </div>
+
+          <div class="mySlides fade">
+            <img title="Pic-3" src="assets/images/Banner_3.jpg" />
+            <p class="text">
+              “Never trust anyone who has not brought a book with them.” -
+              Lemony Snicket
+            </p>
+          </div>
+
+          <div class="mySlides fade">
+            <img title="Pic-6" src="assets/images/Banner_6.jpg" />
+            <p class="text">
+              “Reading is essential for those who seek to rise above the
+              ordinary.” - Jim Rohn
+            </p>
+          </div>
+
+          <div class="mySlides fade">
+            <img title="Pic-7" src="assets/images/Banner_7.jpg" />
+            <p class="text">
+              “ 'Classic' - a book which people praise and don't read.” - Mark
+              Twain
+            </p>
+          </div>
+
+          <div class="mySlides fade">
+            <img title="Pic-8" src="assets/images/Banner_8.jpg" />
+            <p class="text">
+              “You don't have to burn books to destroy a culture. Just get
+              people to stop reading them.” - Ray Bradbury
+            </p>
+          </div>
+
+          <div class="mySlides fade">
+            <img title="Pic-9" src="assets/images/Banner_9.jpg" />
+            <p class="text">
+              “So please, oh please, we beg, we pray, go throw your TV set away,
+              and in its place you can install a lovely bookshelf on the wall.”
+              - Roald Dahl
+            </p>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&larr;</a>
+          <a class="next" onclick="plusSlides(1)">&rarr;</a>
+        </div>
+      </section>
+      <!-- Banner Slider Ends Here -->
+
+      <!-- Content Page Starts Here -->
+      <section class="content abc">
+        <!-- Start article -->
+        <article>
+          <div class="pictures">
+            <h3>Pics Links</h3>
+          </div>
+          <!-- Close pictures -->
+          <div class="pics">
+            <i class="fa fa-search"></i>
+            <input
+              type="text"
+              placeholder="Search"
+              id="myInput"
+              onkeyup="myFunction()"
+            />
+          </div>
+          <!-- Close pics -->
+
+          <!-- Starts links -->
+          <ul class="links" id="myUL">
+            <li>
+              <a href="https://www.pexels.com/" target="_blank"
+                ><span><i class="fa fa-check"></i></span> Pixels</a
+              >
+            </li>
+            <li>
+              <a href="https://unsplash.com/" target="_blank"
+                ><span><i class="fa fa-check"></i></span> Unsplash</a
+              >
+            </li>
+            <li>
+              <a href="https://wall.alphacoders.com/" target="_blank"
+                ><span><i class="fa fa-check"></i></span> AlphaCoders</a
+              >
+            </li>
+            <li>
+              <a href="https://wallpapers.com/" target="_blank"
+                ><span><i class="fa fa-check"></i></span> Wallpaper</a
+              >
+            </li>
+            <li>
+              <a href="https://pixabay.com" target="_blank"
+                ><span><i class="fa fa-check"></i></span> Pixabay</a
+              >
+            </li>
+            <li>
+              <a href="https://wallpapercave.com/" target="_blank"
+                ><span><i class="fa fa-check"></i></span> WallpaperCave</a
+              >
+            </li>
+            <li>
+              <a href="https://www.makeuseof.com/" target="_blank"
+                ><span><i class="fa fa-check"></i></span> MakeUseOf</a
+              >
+            </li>
+            <li>
+              <a href="https://www.wallpaperflare.com/" target="_blank"
+                ><span><i class="fa fa-check"></i></span> WallpaperFlare</a
+              >
+            </li>
+            <li>
+              <a href="https://burst.shopify.com/" target="_blank"
+                ><span><i class="fa fa-check"></i></span> Shopify</a
+              >
+            </li>
+            <li>
+              <a href="https://wallpaperscraft.com/" target="_blank"
+                ><span><i class="fa fa-check"></i></span> WallpaperScraft</a
+              >
+            </li>
+            <li>
+              <a href="https://www.peakpx.com/" target="_blank"
+                ><span><i class="fa fa-check"></i></span> PeakPx</a
+              >
+            </li>
+            <li>
+              <a href="https://wallpaperaccess.com/" target="_blank"
+                ><span><i class="fa fa-check"></i></span> WallpaperAccess</a
+              >
+            </li>
+            <li>
+              <a href="https://careers.zedge.net/" target="_blank"
+                ><span><i class="fa fa-check"></i></span> Zedge</a
+              >
+            </li>
+            <li>
+              <a href="https://in.pinterest.com/" target="_blank"
+                ><span><i class="fa fa-check"></i></span> Printerest</a
+              >
+            </li>
+            <li>
+              <a href="https://www.apple.com/" target="_blank"
+                ><span><i class="fa fa-check"></i></span> Apple</a
+              >
+            </li>
+            <li>
+              <a href="https://stocksnap.io/" target="_blank"
+                ><span><i class="fa fa-check"></i></span> StockSnap</a
+              >
+            </li>
+            <li>
+              <a href="https://wallpaper-house.com/" target="_blank"
+                ><span><i class="fa fa-check"></i></span> WallpaperHouse</a
+              >
+            </li>
+            <li>
+              <a href="https://www.shutterstock.com/" target="_blank"
+                ><span><i class="fa fa-check"></i></span> ShutterStock</a
+              >
+            </li>
+            <li>
+              <a href="https://stocksnap.io/" target="_blank"
+                ><span><i class="fa fa-check"></i></span> Stocksnap</a
+              >
+            </li>
+            <li>
+              <a href="https://www.istockphoto.com/" target="_blank"
+                ><span><i class="fa fa-check"></i></span> Istockphoto</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.bigstockphoto.com/?kw=bigstock%20images&lid=43700018696375110&ds_s_kwgid=58700002220163371&ds_e_adid=184579956378&ds_e_matchtype=search&ds_e_device=c&ds_e_network=g&ds_url_v=2&gclid=Cj0KCQjw08aYBhDlARIsAA_gb0ebRAHEx1x4AITGZ-U5uD49sPiKURki6BGYuG2QwauQX5-JqWklZC0aAoU0EALw_wcB&gclsrc=aw.ds"
+                target="_blank"
+                ><span><i class="fa fa-check"></i></span> Bigstock</a
+              >
+            </li>
+            <li>
+              <a href="https://www.dreamstime.com/" target="_blank"
+                ><span><i class="fa fa-check"></i></span> Dreamstime</a
+              >
+            </li>
+          </ul>
+          <!-- End links -->
+        </article>
+        <!-- Close article -->
+
+        <!-- Start Travelling Destination Section Here -->
+        <article class="books">
+          <div class="pictures">
+            <h3>Travelling Destinations</h3>
+          </div>
+          <!-- Close pictures -->
+          <div class="pics">
+            <i class="fa fa-search"></i>
+            <input
+              type="text"
+              placeholder="Search"
+              id="myInput"
+              onkeyup="myFunction()"
+            />
+          </div>
+          <!-- Close pics -->
+
+          <!-- Start Lists -->
+          <ul class="links" id="myUL">
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Mauritius" target="_blank"
+                ><span><i class="fa fa-check"></i></span> Mauritius</a
+              >
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Goa" target="_blank"
+                ><span><i class="fa fa-check"></i></span>Goa</a
+              >
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Srinagar" target="_blank"
+                ><span><i class="fa fa-check"></i></span>Srinagar, Kashmir
+              </a>
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Paris" target="_blank"
+                ><span><i class="fa fa-check"></i></span> Lucerne and Paris</a
+              >
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Maldives" target="_blank"
+                ><span><i class="fa fa-check"></i></span> Maldives</a
+              >
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Greece" target="_blank"
+                ><span><i class="fa fa-check"></i></span> Greece</a
+              >
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Italy" target="_blank"
+                ><span><i class="fa fa-check"></i></span> Amalfi Coast, Italy</a
+              >
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Australia" target="_blank"
+                ><span><i class="fa fa-check"></i></span> Australia</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/United_Kingdom"
+                target="_blank"
+                ><span><i class="fa fa-check"></i></span> United Kingdom</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/South_Africa"
+                target="_blank"
+                ><span><i class="fa fa-check"></i></span> Cape Town, South
+                Africa</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Switzerland"
+                target="_blank"
+                ><span><i class="fa fa-check"></i></span> Switzerland</a
+              >
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Greece" target="_blank"
+                ><span><i class="fa fa-check"></i></span> Cyclades, Greece</a
+              >
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Iceland" target="_blank"
+                ><span><i class="fa fa-check"></i></span> Iceland</a
+              >
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Japan" target="_blank"
+                ><span><i class="fa fa-check"></i></span> Japan</a
+              >
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Singapore" target="_blank"
+                ><span><i class="fa fa-check"></i></span> Singapore</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/New_Zealand"
+                target="_blank"
+                ><span><i class="fa fa-check"></i></span> North Island, New
+                Zealand</a
+              >
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/France" target="_blank"
+                ><span><i class="fa fa-check"></i></span> Paris, France</a
+              >
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Rajasthan" target="_blank"
+                ><span><i class="fa fa-check"></i></span> Rajasthan, India</a
+              >
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Dubai" target="_blank"
+                ><span><i class="fa fa-check"></i></span> Dubai</a
+              >
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Rome" target="_blank"
+                ><span><i class="fa fa-check"></i></span> Rome</a
+              >
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Morocco" target="_blank"
+                ><span><i class="fa fa-check"></i></span> Morocco</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/British_Virgin_Islands"
+                target="_blank"
+                ><span><i class="fa fa-check"></i></span> British Virgin
+                Islands</a
+              >
+            </li>
+          </ul>
+          <!-- Close Lists -->
+        </article>
+        <!-- Start Travelling Destination Section Here -->
+
+        <!-- Start Novels Section Here -->
+        <article class="inspiration-quote">
+          <div class="pictures">
+            <h3>Novels</h3>
+          </div>
+          <!-- Close pictures -->
+          <div class="pics">
+            <i class="fa fa-search"></i>
+            <input
+              type="text"
+              placeholder="Search"
+              id="myInput"
+              onkeyup="myFunction()"
+            />
+          </div>
+          <!-- Close pics -->
+
+          <!-- Starts Lists -->
+          <ul class="links" id="myUL">
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Ulysses_(novel)"
+                target="_blank"
+                ><span><i class="fa fa-check"></i></span> Ulysses</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/The_Great_Gatsby"
+                target="_blank"
+                ><span><i class="fa fa-check"></i></span> The Great Gatsby</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/The_Sign_of_the_Four"
+                target="_blank"
+                ><span><i class="fa fa-check"></i></span> The Sign of the
+                Four</a
+              >
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Lolita" target="_blank"
+                ><span><i class="fa fa-check"></i></span> Lolita</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Brave_New_World"
+                target="_blank"
+                ><span><i class="fa fa-check"></i></span> Brave New World</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/The_Sound_and_the_Fury"
+                target="_blank"
+                ><span><i class="fa fa-check"></i></span> The Sound and the
+                Fury</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Vanity_Fair_(novel)"
+                target="_blank"
+                ><span><i class="fa fa-check"></i></span> Vanity Fair</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Nightmare_Abbey"
+                target="_blank"
+                ><span><i class="fa fa-check"></i></span> Nightmare Abbey</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Sons_and_Lovers"
+                target="_blank"
+                ><span><i class="fa fa-check"></i></span> Sons and Lovers</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Emma_(novel)"
+                target="_blank"
+                ><span><i class="fa fa-check"></i></span> Emma</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Kidnapped_(novel)"
+                target="_blank"
+                ><span><i class="fa fa-check"></i></span> Kidnapped</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/The_Way_of_All_Flesh"
+                target="_blank"
+                ><span><i class="fa fa-check"></i></span> The Way of All
+                Flesh</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Three_Men_in_a_Boat"
+                target="_blank"
+                ><span><i class="fa fa-check"></i></span> Three Men in a Boat</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Little_Women"
+                target="_blank"
+                ><span><i class="fa fa-check"></i></span> Little Women</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/The_Moonstone"
+                target="_blank"
+                ><span><i class="fa fa-check"></i></span> The Moonstone</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/The_Scarlet_Letter"
+                target="_blank"
+                ><span><i class="fa fa-check"></i></span> The Scarlet Letter</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/The_Heart_Is_a_Lonely_Hunter"
+                target="_blank"
+                ><span><i class="fa fa-check"></i></span> The Heart is a Lonely
+                Hunter</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Jude_the_Obscure"
+                target="_blank"
+                ><span><i class="fa fa-check"></i></span> Jude the Obscure</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/The_God_of_Small_Things"
+                target="_blank"
+                ><span><i class="fa fa-check"></i></span> The God of Small
+                Things</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Things_Fall_Apart"
+                target="_blank"
+                ><span><i class="fa fa-check"></i></span> Things Fall Apart</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Beloved_(novel)"
+                target="_blank"
+                ><span><i class="fa fa-check"></i></span> Beloved</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Infinite_Jest"
+                target="_blank"
+                ><span><i class="fa fa-check"></i></span> Infinite Jest</a
+              >
+            </li>
+          </ul>
+          <!-- Close Lists -->
+        </article>
+        <!-- Close Novels Section Here -->
+      </section>
+      <!-- Content Ends Here -->
+
+      <!-- Starts Social media Details Here -->
+      <section class="social-media">
+        <div class="icons abc">
+          <a
+            href="https://www.facebook.com/ankur.kharwar.9210/"
+            target="_blank"
+            title="Facebook"
+            class="fa fa-facebook"
+          ></a>
+          <a
+            href="https://twitter.com/AnkurKharwar6"
+            target="_blank"
+            title="Twitter"
+            class="fa fa-twitter"
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/ankur-kharwar-522752200/"
+            target="_blank"
+            title="LinkdIn"
+            class="fa fa-linkedin"
+          ></a>
+          <a
+            href="https://www.youtube.com/account"
+            target="_blank"
+            title="YouTube"
+            class="fa fa-youtube"
+          ></a>
+          <a
+            href="https://www.instagram.com/ankur_6435/"
+            target="_blank"
+            title="Instagram"
+            class="fa fa-instagram"
+          ></a>
+          <a
+            href="https://soundcloud.com/ankur-kharwar-298149956"
+            target="_blank"
+            title="SoundCloud"
+            class="fa fa-soundcloud"
+          ></a>
+          <a
+            href="https://in.pinterest.com/ankurkharwar933/"
+            class="fa fa-pinterest"
+            target="_blank"
+            title="Printerest"
+          ></a>
+          <a
+            href="https://create.snapchat.com/?ticket=dUCxEW4LfaEweBHjj1cuiEGVVAZzsKEm9BRseqA1W3Ws8_1QaVY3nAkuqwWmjoxDTHOxVaoIw0zulwm_ITRAdQ6NatVoay1TFJv4X4CSzbKvJ78BF0JUiS6jkPjMkOe6p6Y0laHNbafoFZTEyAgS9qJndsug5Pw4qr69vAfXhw5nl23I96ZRF1Fg_RJWo0ClmplhrJd7_cqhgDbLdTjvwis9Koz3pCMzKZSieAT2zteXtaP1XExVoRDAg5r3PfdQ2lmYZBpZ6scWthq_32jDO0NsHbFgf4omu4rFnr9sgzQiEyMHADRwcH2HRiOSfFtVTXmAA4TGrLBnD3UewfY9Q7WcWnYuce5Msbn-2mVLyUT4geFmlGfZ-vaCaBpsDtG2ILoQyDFZQw9_tx18tEVIfn8_-OaqVjZXJYPLEj7KICGi7vYL4NHUwl4rFDvQAA"
+            target="_blank"
+            title="Snapchat"
+            class="fa fa-snapchat-ghost"
+          ></a>
+          <a
+            href="https://secure.skype.com/portal/overview"
+            target="_blank"
+            title="Skype"
+            class="fa fa-skype"
+          ></a>
+          <a
+            href="https://login.yahoo.com/account/personalinfo;_ylt=AwrKAhdZcuJiKqULG1C6HAx.?.intl=in&.lang=en-IN"
+            target="_blank"
+            title="Yahoo!"
+            class="fa fa-yahoo"
+          ></a>
+        </div>
+      </section>
+      <!-- Ends Social media Details Here -->
+
+      <!-- Comment Section -->
+      <section>
+        <div class="comment abc">
+          <label class="Label" for="comment">Comments:</label>
+          <textarea
+            class="Textarea"
+            rows="10"
+            cols="120"
+            id="comment"
+            name="text"
+            placeholder="Write comments here!!!"
+          ></textarea>
+        </div>
+        <div class="comment-btn">
+          <button class="Sign-Up" onclick="sendComment()">Submit</button>
+        </div>
+      </section>
+      <!-- Comment Section Ends Here -->
+
+      <!-- Subscribe Section Starts Here -->
+      <section class="sub">
+        <h3>Hey! Here you can Subscribe to my site🤔🤔🤔</h3>
+
+        <!-- Start Input type -->
+        <div class="subscribe abc">
+          <input
+            class="Input"
+            type="mail"
+            id="emailjs"
+            placeholder="Enter Your Email ID"
+          />
+          <button onclick="sendMail()" class="Sign-Up">Subscribe</button>
+          <button class="Sign-Up form">
+            <a href="https://forms.gle/u2XxtCGoPBQcvT4K8" target="_blank"
+              >Google Form</a
+            >
+          </button>
+        </div>
+        <!-- Close Input type -->
+      </section>
+      <!-- Subscribe Section Ends Here -->
+      <hr />
+
+      <!-- Footer Starts Here -->
+      <footer class="abc">
+        <!-- Start contact Here-->
+        <div class="contact">
+          <!-- Start call -->
+          <div>
+            <span><i class="fa fa-phone"></i></span>
+            <a class="call" href="tel:+91 630-666-479-5">+91 (630) 666-4795</a>
+          </div>
+          <!-- Close call -->
+
+          <!-- Start call -->
+          <div>
+            <span><i class="fa fa-envelope"></i></span>
+            <a class="call" href="mailto:ankurkharwar933@gmail.com"
+              >ankurkharwar933@gmail.com</a
+            >
+          </div>
+          <!-- Close call -->
+
+          <!-- Start call -->
+          <div>
+            <span><i class="fa fa-share"></i></span>
+            <a class="call" href="contact.html">connect</a>
+          </div>
+          <!-- Close call -->
+        </div>
+        <!-- Ends contact Here -->
+
+        <!-- Start Navbar here also -->
+        <div class="footer-list">
+          <ul>
+            <li><a href="gallery.html" title="gallery">Gallery</a></li>
+            <li><a href="bookList.html" title="books">Books</a></li>
+            <li>
+              <a href="typesOf.html" title="quotes">Inspiration Quotes</a>
+            </li>
+            <li>
+              <a
+                href="https://www.forbes.com/real-time-billionaires/#326b7fc53d78"
+                title="billionaire list"
+                >Forbes</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Close footer-list -->
+
+        <!-- Start logo -->
+        <div>
+          <a href="#" title="Pyari Aanya">
+            <img
+              class="Logo Animation"
+              src="assets/images/image_2.png"
+              alt="LOGO"
+          /></a>
+        </div>
+        <!-- Close logo -->
+
+        <!-- Start Quotes -->
+        <div class="details">
+          <p title="Quote">
+            ❝ If you think you are right then do what you think is right. ❞
+          </p>
+        </div>
+        <!-- Close Quotes -->
+      </footer>
+      <!-- Footer Ends Here -->
+
+      <!-- Start copyright -->
+      <div class="copyright">
+        <h4 title="Copyright">
+          Copyright &#169;2022 All Rights Reserved Designed by contentLink 2022
+        </h4>
+      </div>
+      <!-- Close copyrigth -->
+    </main>
+    <!-- Close main Here -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/comment.js"></script>
+  </body>
+</html>

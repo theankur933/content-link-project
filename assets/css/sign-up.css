@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #000000;
+  --white: #fff;
+  --green: #008000;
+  --sky: #007c89;
+  --dark-sky: #007bb5;
+  --slow-purple: #3b5998;
+  --slow-red: #dd4b39;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.top {
+  text-align: center;
+}
+
+.top a {
+  text-decoration: none;
+}
+
+.top a:hover {
+  text-decoration: underline;
+}
+
+.forget p a,
+.for-pass a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.forget p a:hover,
+.for-pass a:hover {
+  text-decoration: underline;
+}
+
+.abc {
+  display: flex;
+}
+
+form {
+  width: 400px;
+  background-color: var(--white);
+  margin: 20px auto;
+  padding-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid var(--green);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.main {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.input-type {
+  flex-direction: column;
+}
+
+.boxes {
+  line-height: 2.5;
+}
+
+.boxes .input {
+  padding: 5px;
+  width: 300px;
+  margin-left: 50px;
+  outline: 0;
+  border: none;
+  border-bottom: 1px solid var(--green);
+}
+
+.boxes .input[type="email"],
+.boxes .input[type="password"] {
+  color: var(--green);
+  text-align: center;
+}
+
+.button {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 8px 50px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid var(--green);
+  transition: 0.3s linear;
+}
+
+.button button:hover {
+  background-color: var(--sky);
+  color: var(--white);
+  border: 1px solid var(--sky);
+}
+
+.button p,
+.forget p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-login {
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.fa {
+  padding: 8px 40px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.social-login .fa-google {
+  background: var(--slow-red);
+  color: var(--white);
+  border-radius: 10px;
+}
+
+.social-login .fa-facebook {
+  background: var(--slow-purple);
+  color: var(--white);
+  border-radius: 10px;
+}
+
+.social-login .fa-linkedin {
+  background: var(--dark-sky);
+  color: var(--white);
+  border-radius: 10px;
+}
+
+.for-pass {
+  position: relative;
+  right: 78px;
+  bottom: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+  form {
+    width: auto;
+    height: 100vh;
+    margin: 0 auto;
+    border-radius: 0;
+  }
+
+  .boxes {
+    line-height: 4;
+  }
+
+  .boxes .input {
+    margin: 0 auto;
+  }
+
+  .top {
+    display: none;
+  }
+}
